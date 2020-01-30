@@ -25,21 +25,37 @@ h2 {
   transition: font-size .3s;
 }
 
+h3 { 
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #fff;
+  margin: 50px 0;
+  border-bottom: dotted 5px black;
+  transition: color .4s;
+   }
+h3:hover { color:#FFAA00;  }
+
 h2:hover {
   font-size: 35px;
  }
 p { 
+  font-size: 1.5em;
   color: #fff;
   line-height: 1.5em;
   text-align: justify;
   margin-bottom: 100px;
+  padding: 0 50px;
 }
 
+span { 
+color:#FFAA00; }
+
 .container { 
-	clear: both;
+
 	background-color: #222;
 	width: 80%; 
-	height: 70vw;
+  height: 0;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -56,14 +72,34 @@ main {
   text-align: center;
 }
 
-.test { 
+footer { 
 background-color: black; 
-width: 100px;
-height: 100px; }
+width: 100%;
+height: 100px;
+position: sticky;
+bottom: 0; }
 
 
+p::selection,h1::selection, h2::selection, span::selection{ 
+  background: #FFAA00;
+  color: #fff; }
 
+p::-moz-selection,h1::-moz-selection, h2::-moz-selection, span::-moz-selection {
+  background: #FFAA00;
+  color: #fff;
+}
 
+.code { 
+background-color: #bbb;
+padding: 25px;
+text-align: justify;
+font-size: 2.5em;
+border-top: 20px solid black;
+border-bottom: 20px solid black;
+transition: background-color .4s;
+margin-bottom: 50px;
+}
+.code:hover { background-color:#ddd; }
 
 
 /* style rozwijanego menu */ 

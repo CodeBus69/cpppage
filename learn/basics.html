@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Podstawy</title>
+
+	<meta name='description' content='Kurs C++ stworzony dla 2 Liceum Ogólnokształcącego w Jaśle'>
+	<meta name='keywords' content='C++, Cpp, Jaslo'> 
+	<meta name='author' content ='Kamil Kucharczyk'> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</head>
+<body>
+<div class='container'>
+	
+	<a href='../index.html'><h1> Podstawy </h1></a>
+		
+	<div class='nav'> 
+		<ol>
+      <li><a href="#">Nauka</a>
+        <ul>
+          <li><a href="basics.html">Podstawy</a></li>
+                <li><a href="conditionals.html">Instrukcje warunkowe</a></li>
+                <li><a href="loops.html">Pętle</a></li>
+               <li><a href="functions.html">Funkcje</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Sprawdzian</a>
+        <ul>
+          <li><a href="#">Podstawy</a></li>
+          <li><a href="#">Instrukcje warunkowe</a></li>
+          <li><a href="#">Pętle</a></li>
+          <li><a href="#">Funkcje</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Przydatne linki</a>
+      	<ul>
+     		 <li><a href="#">Podstawy</a></li>
+        	 <li><a href="#">Nasza szkoła</a></li>
+    	 </ul>
+      </li>
+      <li><a href="#">Autor</a></li>
+    </ol>
+	</div>
+
+  <main> 
+    <h2> Struktura programu </h2>
+    <p> Instalując Code::Blocks i tworząc nowy projekt otrzymujemy przykładowy kod, który wygląda w następujący sposób </p>
+
+    <section class='code'>
+    <code class='prettyprint'> 
+      
+      #include &ltiostream&gt  <br>
+      using namespace std; <br>
+      int main () <br>
+      {<br>
+        cout << "Hello world!" << endl; <br>
+        return 0;<br>
+      }<br>
+    </code>
+    </section>
+
+    <h3> Omówmy teraz każdą linijkę tego kodu </h3>
+
+    <section class='code'><code class='prettyprint'>#include&ltiostream&gt</code></section>
+
+    <p> W tej linijce deklarujemy bibliotekę, jaką będziemy chcieli używać w naszym programie. Chodzi o to, że dana biblioteka posiada swoje funkcje i zmienne które nie zawsze musimy potrzebować. 
+    Między ostrymi nawiasami jest nazwa biblioteki w tym wypadku <span> iostream </span> <br> 
+    Oznacza ona <span> input/output stream </span> czyli strumień wejścia i wyjścia, dzięki niej możemy uzywać strumienia <span> cout </span> i <span> cin</span>, które omówimy w dalszej części </p>
+
+    <section class='code'><code class='prettyprint'>using namespace std;</code></section>
+    <p> Nie rozwodząc się zbyt długo, dzięki tej linijce nie będziemy musieli pisać za każdym razem <span> std::cout </span> czy <span> std::cin</span>, tylko skróci nam to zapis do <span> cout </span> i <span> cin </span></p>
+
+    <section class='code'><code class='prettyprint'>int main ()</code></section>
+    <p> Jest to funkcja main, w późniejszej części kursu dowiemy się, że program to zbiór rożnych funkcji, które ze sobą współdziałają. Funkcja <span> main() </span> jest funkcją główną w języku C++ i program zawsze zaczyna działanie od niej, nie może się ona nazywać inaczej. Funkcja zawiera klamerki <span> { } </span> wewnątrz których znajduje się kod wykonywany przez daną funkcję</p> 
+
+    <section class='code'><code class='prettyprint'>cout << "Hello world!" << endl; </code></section>
+
+    <p> Jest to strumień wyjścia, czyli strumień kierujący dane na zewnątrz programu, w tym wypadku na ekran konsoli. Operatory <span> << </span> skierowane w lewo mówią nam o tym, że strumień danych jest wychodzący. Dzięki tej linijce kodu na ekranie wyświetli nam się komunikat <span> Hello world! </span> znajdujący się między nawiasami </p>
+
+    <section class='code'><code class='prettyprint'> return 0; </code></section>
+
+    <p> W dziale z funkcjami dowiesz się, że każda funkcja może zwrócić jakąś wartość, w tym wypadku za pomocą tej linijki funkcja <span> main() </span> zwraca wartość <span> 0 </span> nie musisz się na razie tym przejmować, dokładne rozumienie funkcji dopiero w przyszłych rozdziałach </p>
+
+
+
+    
+
+
+
+  </main>
+</div>
+
+
+  
+		
+</body>
+</html>
