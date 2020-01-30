@@ -14,26 +14,54 @@ h1 {
 	margin:0;
 }
 
+h2 { 
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 3vw;
+  transition: font-size .3s;
+}
+
+h2:hover {
+  font-size: 35px;
+ }
+p { 
+  color: #fff;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
 .container { 
 	clear: both;
 	background-color: #222;
 	width: 80%; 
-	height: 1000px;
+	height: 70vw;
 	margin: 0 auto;
-	padding: 0px;
-}
-
-
-
-.content { 
-background-color: #ddd;
-transition: .15s;
-padding: 25px; 
+	padding: 0;
 }
 
 .content:hover { 
 background-color: #fff; 
 }
+
+main { 
+  margin: 10vw auto;
+  background-color: white;
+  width: 75%;
+  height: 20px; 
+  text-align: center;
+}
+
+.test { 
+background-color: black; 
+width: 100px;
+height: 100px; }
+
+
 
 
 
