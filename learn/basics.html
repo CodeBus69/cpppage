@@ -46,10 +46,36 @@
       </li>
       <li><a href="#">Autor</a></li>
     </ol>
+
+      <br>
+    <ol class='podmenu'> 
+      <li class='podmenu'><a href="#IDE">Środowisko programistyczne</a></li>
+      <li class='podmenu'><a href="#syntax">Struktura programu</a></li>
+      <li class='podmenu'><a href="#variables">Zmienne</a></li>
+      <li class='podmenu'><a href="#operators">Operatory</a></li>
+      <li class='podmenu'><a href="#submit">Podsumowanie</a></li>
+    </ol>
+
+    <br> <br> <br> <br> <br>
+
 	</div>
 
   <main> 
-    <h2> Struktura programu </h2>
+
+    <!-- Środowisko programistyczne --> 
+
+    <h2 id='IDE'> Środowisko programistyczne </h2>
+    <p> Kod C++ możemy napisać nawet w notatniku, jednak aby go skompilować potrzebujemy tzw. kompilatora. 
+    W naszej szkole używamy <span> Code::Blocks </span> i na takim też polecam ćwiczyć na początku. Nie wymaga on praktycznie żadnej konfiguracji, aby zacząć na nim działać. Jeśli chcesz kompilować kod bez pobierania żadnego IDE (środowiska programistycznego), możesz skorzystać z takich stron jak cpp.sh 
+
+    <br> <br> 
+
+    Poradnik, jak zainstalować Code:Blocks możesz znaleźć <a href='https://www.youtube.com/watch?v=ErOzmh3BiXU&list=PLOYHgt8dIdoxx0Y5wzs7CFpmBzb40PaDo' target=_blank> tutaj </a>
+
+    </p> 
+    <!-- Struktura programu -->
+
+    <h2 id='syntax'> Struktura programu </h2>
     <p> Instalując Code::Blocks i tworząc nowy projekt otrzymujemy przykładowy kod, który wygląda w następujący sposób </p>
 
     <section class='code'>
@@ -81,11 +107,78 @@
 
     <section class='code'><code class='prettyprint'>cout << "Hello world!" << endl; </code></section>
 
-    <p> Jest to strumień wyjścia, czyli strumień kierujący dane na zewnątrz programu, w tym wypadku na ekran konsoli. Operatory <span> << </span> skierowane w lewo mówią nam o tym, że strumień danych jest wychodzący. Dzięki tej linijce kodu na ekranie wyświetli nam się komunikat <span> Hello world! </span> znajdujący się między nawiasami </p>
+    <p> Jest to strumień wyjścia, czyli strumień kierujący dane na zewnątrz programu, w tym wypadku na ekran konsoli. Operatory <span> << </span> skierowane w lewo mówią nam o tym, że strumień danych jest wychodzący. Dzięki tej linijce kodu na ekranie wyświetli nam się komunikat <span> Hello world! </span> znajdujący się między nawiasami, element <span> endl </span> powoduje przejście do następnej linijki </p>
 
     <section class='code'><code class='prettyprint'> return 0; </code></section>
 
     <p> W dziale z funkcjami dowiesz się, że każda funkcja może zwrócić jakąś wartość, w tym wypadku za pomocą tej linijki funkcja <span> main() </span> zwraca wartość <span> 0 </span> nie musisz się na razie tym przejmować, dokładne rozumienie funkcji dopiero w przyszłych rozdziałach </p>
+
+
+    <!-- zmienne --> 
+
+    <h2 id='variables'> Zmienne </h2>
+
+    <p> Istotnym elementem praktycznie każdego języka programowania są zmienne, czyli 'komórki' w których program przechowuje dane. 
+    W C++ mamy kilka rodzajów zmiennych. 
+    Tymi podstawowymi są: </p>
+
+    <ul> 
+      <li class='lista'> <span> int </span> - liczby całkowite </li>
+      <li class='lista'> <span> string </span> - wyrazy i zdania </li> 
+      <li class='lista'> <span> char </span> - pojedyńcze znaki </li> 
+      <li class='lista'> <span> double </span> - liczby zmiennoprzecinkowe </li>
+    </ul>
+
+    <p> Zmienna potrzebuje zadeklarowania, aby program zarezerwował dla niej miejsce w pamięci, nie możemy więc wykorzystywać zmienych, które nie istnieją. </p>
+
+    <section class='code'><code class='prettyprint'>
+
+    int wiek; <br> 
+    string imie; <br>
+
+    </code></section>
+
+    <p> Możemy również od razu przypisać im wartości </p>
+
+    <section class='code'><code class='prettyprint'>
+
+    int wiek = 18; <br> 
+    string imie = "Marcin"; <br>
+    
+    </code></section>
+
+    <h3> Wykorzystywanie zmiennych </h3> 
+    <p> Najprostszym sposobem na wykorzystanie zmiennej jest jej wyświetlenie na ekranie, możemy to zrobić komendą poznaną wcześniej </p> 
+
+    <section class='code'><code class='prettyprint'>
+
+    int wiek = 18; <br> 
+    string imie = "Marcin"; <br>
+    cout << imie << " ma " << wiek << " lat " << endl; <br>
+    
+    </code></section>
+
+    <p> Ta komenda spowoduje wyświetlenie się na ekranie napisu <br> 
+    <span> Marcin ma 18 lat </span> <br> 
+    Zauważ, że jeśli chcemy użyć wartości danej zmiennej, to nazwę zmiennej wpisujemy bez cudzysłowia, ponieważ jeśli byśmy tak zrobili, czyli: </p>
+
+    <section class='code'><code class='prettyprint'>
+
+    int wiek = 18; <br> 
+    string imie = "Marcin"; <br>
+    cout << "imie" << " ma " << "wiek" << " lat " << endl; <br>
+    
+    </code></section>
+
+    <p> To ujrzelibyśmy na ekranie następujące zdanie: <br> 
+    <span> imie ma wiek lat </span> 
+    <p> Dzieje się tak ponieważ, gdy wpisujemy pewną wartość w cudzysłów, to program bierze pod uwagę to co jest dosłownie między nawiasami. Wpisanie bez nawiasów sprawia, że program zaczyna poszukiwać zmiennej o takiej nazwie i ją używa. </p>
+
+
+
+
+
+
 
 
 
